@@ -9268,13 +9268,11 @@ function $d({ card: e, onStartAgain: t }) {
     children: P.jsxs("div", {
       className: "content-wrap result-wrap",
       children: [
-        P.jsx("h2", {
-          className: "result-title",
-          children: "Congratulations!",
-        }),
-        P.jsx("p", {
-          className: "result-subtitle",
-          children: "you have found your perfect match!",
+        P.jsx("img", {
+          className: "result-title-image",
+          src: "./assets/congratulation.png",
+          alt: "Yes, there's a card for that.",
+          style: { width: "min(480px, 80vw)", marginBottom: "32px", marginTop: "12px", objectFit: "contain" }
         }),
         P.jsxs("p", {
           className: "result-text",
