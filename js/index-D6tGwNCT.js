@@ -9076,21 +9076,6 @@ function Md({ onNext: e }) {
           }),
         ],
       }),
-      P.jsxs("footer", {
-        className: "screen-footer",
-        children: [
-          P.jsx("img", {
-            className: "footer-logo vox-logo",
-            src: `${t}assets/vox-cinema-seeklogo.png`,
-            alt: "VOX Cinemas",
-          }),
-          P.jsx("img", {
-            className: "footer-logo adcb-logo",
-            src: `${t}assets/logo.png`,
-            alt: "ADCB",
-          }),
-        ],
-      }),
     ],
   });
 }
@@ -9272,7 +9257,12 @@ function $d({ card: e, onStartAgain: t }) {
           className: "result-title-image",
           src: "./assets/congratulation.png",
           alt: "Yes, there's a card for that.",
-          style: { width: "min(480px, 80vw)", marginBottom: "32px", marginTop: "12px", objectFit: "contain" }
+          style: {
+            width: "min(480px, 80vw)",
+            marginBottom: "32px",
+            marginTop: "12px",
+            objectFit: "contain",
+          },
         }),
         P.jsxs("p", {
           className: "result-text",
