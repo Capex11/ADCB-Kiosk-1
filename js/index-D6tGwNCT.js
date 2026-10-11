@@ -9042,7 +9042,7 @@ function Md({ onNext: e }) {
             children: P.jsx("img", {
               className: "intro-visual",
               src: `${t}assets/popcorn.png`,
-              alt: "Cinema visual",
+              alt: "ADCB credit card",
             }),
           }),
           P.jsxs("div", {
