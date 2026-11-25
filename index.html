@@ -16,8 +16,29 @@
     <link rel="apple-touch-icon" href="images/icon.png" />
     <link rel="stylesheet" href="css/whz0qjd.css" />
     <title>ADCB Kiosk</title>
-    <script type="module" crossorigin="" src="js/index-D6tGwNCT.js"></script>
     <link rel="stylesheet" crossorigin="" href="css/index-DUQa6AVa.css" />
+    <script>
+      // Kiosk switch: true = show "closed" page and block the game, false = game is open.
+      var KIOSK_CLOSED = true;
+
+      if (KIOSK_CLOSED) {
+        document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById("root").innerHTML =
+            '<main class="app-root" style="--app-bg-image: url(&quot;images/bg.png&quot;)">' +
+            '<section class="screen fade-in"><div class="content-wrap">' +
+            '<div class="intro-card">' +
+            '<h2 class="intro-title">The kiosk is<br />currently closed</h2>' +
+            '<p class="intro-subtext">Thank you for your interest. Please check back soon!</p>' +
+            "</div></div></section></main>";
+        });
+      } else {
+        var s = document.createElement("script");
+        s.type = "module";
+        s.crossOrigin = "";
+        s.src = "js/index-D6tGwNCT.js";
+        document.head.appendChild(s);
+      }
+    </script>
   </head>
   <body>
     <div id="root">
